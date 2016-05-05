@@ -24,7 +24,7 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 <style type="text/css">
-    
+
     .iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
     .iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
 </style>
@@ -138,7 +138,7 @@
                     <abbr title="Phone">P</abbr>: +86 5847 9676</p><p><i class="fa fa-phone"></i>
                     <abbr title="Phone">P</abbr>: +86 86 186 0502 5414</p>
                 <p><i class="fa fa-envelope-o"></i>
-                    <abbr title="Email">E</abbr>: <a href="mailto:megagear@163.com">name@example.com</a>
+                    <abbr title="Email">E</abbr>: <a href="mailto:megagear@163.com">megagear@163.com</a>
                 </p>
                 <p><i class="fa fa-clock-o"></i>
                     <abbr title="Hours">H</abbr>: Monday - Friday: 9:00 AM to 5:00 PM</p>
@@ -207,7 +207,7 @@
         addMapControl();//向地图添加控件
         addMarker();//向地图中添加marker
     }
-    
+
     //创建地图函数：
     function createMap(){
         var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
@@ -215,7 +215,7 @@
         map.centerAndZoom(point,17);//设定地图的中心点和坐标并将地图显示在地图容器中
         window.map = map;//将map变量存储在全局
     }
-    
+
     //地图事件设置函数：
     function setMapEvent(){
         map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
@@ -223,7 +223,7 @@
         map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
         map.enableKeyboard();//启用键盘上下左右键移动地图
     }
-    
+
     //地图控件添加函数：
     function addMapControl(){
         //向地图中添加缩放控件
@@ -236,7 +236,7 @@
     var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
     map.addControl(ctrl_sca);
     }
-    
+
     //标注点数组
     var markerArr = [{title:"上海明图科技股份有限公司",content:"上海市浦东新区碧波路518号309室",point:"121.588859|31.209901",isOpen:1,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
          ];
@@ -258,7 +258,7 @@
                         color:"#333",
                         cursor:"pointer"
             });
-            
+
             (function(){
                 var index = i;
                 var _iw = createInfoWindow(i);
@@ -293,7 +293,7 @@
         var icon = new BMap.Icon("http://app.baidu.com/map/images/us_mk_icon.png", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
         return icon;
     }
-    
+
     initMap();//创建和初始化地图
 </script>
 
